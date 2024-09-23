@@ -1,6 +1,6 @@
-import imgBanner from '../../../assets/images/bannerHome-kasa.webp';
-import Thumb from "../../../components/Thumb";
-import livres from "../../../Data/logements.json";
+import imgBanner from '../../assets/images/bannerHome-kasa.webp';
+import Thumb from "../Thumb";
+import livres from "../../Data/logements.json";
 
 const Home = () => {
     return (
