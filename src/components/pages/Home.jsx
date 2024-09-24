@@ -1,6 +1,7 @@
 import imgBanner from '../../assets/images/bannerHome-kasa.webp';
 import Thumb from "../Thumb";
 import livres from "../../Data/logements.json";
+import Footer from '../Footer';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
         <div className="gallery">
         <Thumb livres={livres} />
         </div>
+        <Footer />
     
       </div>
     );

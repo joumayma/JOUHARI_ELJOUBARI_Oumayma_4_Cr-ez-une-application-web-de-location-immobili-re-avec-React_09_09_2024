@@ -1,7 +1,8 @@
 import Header from "./components/Header";
-import Home from "./components/pages/Home";
+import Home from "./components/pages//Home";
 import About from "./components/pages/About";
-import Livre from "./Data/logements.json";
+import AboutCollapse from "./components/pages/AboutCollapse";
+import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -14,7 +15,8 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/livre/:id" element={<Livre />} />
+            <Route path="/aboutcollapse" element={<AboutCollapse />} />
+            <Route path="/footer" element={<Footer />} />
           </Routes>
         </main>
       </div>
