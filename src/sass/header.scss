@@ -2,12 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
+    width: 100%;
     margin: auto;
 
     &_logo {
         &_img {
-            width: 10rem;
+            width: 100%;
         }
     }
 
@@ -24,13 +24,15 @@
             
             &_navlink {
                 padding: 0.2rem 0.7rem;
+                color:#000;
             }
             
             &_active {
                 font-family: 'Montserrat-Medium';
-                background: hsla(0, 100%, 82%, 0.2);
                 border-radius: 0.3rem;
                 padding: 0.2rem 0.7rem;
+                text-decoration: underline;
+               
             }
         }
     }

@@ -1,5 +1,5 @@
 import LogoKasa from "../assets/images/LOGO.svg";
-import { NavLink, BrowserRouter as Router } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return(

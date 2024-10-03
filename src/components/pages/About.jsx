@@ -1,6 +1,6 @@
 import imgBanner from '../../assets/images/about-background.png';
 import AboutCollapse from './AboutCollapse';
-import Footer from '../Footer';
+
 
 
 const About = () => {
@@ -11,7 +11,6 @@ const About = () => {
           <AboutCollapse /> {/* Ajoute ici le composant AboutCollapse */}
 
           </div>
-          <Footer />
         </section>
     )
 }

@@ -1,18 +1,18 @@
-import React from 'react';
 
-const Card = ({ id, title, cover }) => {
-    return(
-        <li key={id} className='housing'>
-            <a href={'/housing/' + id}>
-                <figure className='housing_figure'>
-                    <img src={cover} alt={title}  className='housing_figure_cover'/>
-                    <figcaption className='housing_figure_figcaption'>
-                        <h2 className='housing_figure_figcaption_title'>{title}</h2>
-                    </figcaption>
-                </figure>
-            </a>
-        </li>
-    )
-}
+import { Link } from 'react-router-dom';
+import Housings from "../Data/logements.json";
 
-export default Card;
+const Cards = () => {
+  return (
+    Housings.map((housing) => (
+      <Link to={`/Housing/${housing.id}`} className="cards" key={housing.id}>
+        <img src={housing.cover} alt={housing.title} />
+        <h3>{housing.title}</h3>
+      </Link>
+    ))
+  );
+};
+
+
+
+export default Cards;

@@ -1,10 +1,39 @@
 @use "../src/sass/app.scss";
 @use "../src/sass/header.scss";
 @use "../src/sass/home.scss";
-@use "../src/sass/thumb.scss";
+@use "../src/sass/cards.scss";
 @use "../src/sass/about.scss";
 @use "../src/sass/collapse.scss";
 @use "../src/sass/footer.scss";
 @use "../src/sass/gallery.scss";
 @use "../src/sass/housing.scss";
 @use "../src/sass/nomatch.scss";
+html {
+    position: relative;
+    min-height: 100vh;
+    margin: auto;
+    padding: 0;
+    max-width: 1440px;
+    font-size: 18px;
+    color: #ff5656;
+    font-family: 'Montserrat-Regular';
+    background: #fff;
+}
+
+h1, h2 {
+    font-family: 'Montserrat-Medium';
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ff5656;
+}
