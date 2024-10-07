@@ -7,30 +7,17 @@
     position: relative;
     border-radius: 0.8rem;
     box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
-    &:hover {
-        .slideshow_idx {
-            opacity: 1;
-        }
-    }
-.gallery {
-    align-items: center;
-  background-color: #f7f7f7;
-  border-radius: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  padding: 30px;
-}
+    
 
     &_container {
         display: flex;
         transition: transform .5s ease;
+        width: 100%;
 
         &_img {
             flex-shrink: 0;
             width: 100%;
-            height: 350px;
+            height: 415px;
             object-fit: cover;
         }
     }
@@ -51,11 +38,8 @@
             width: 50px !important;
             height: auto !important;
             font-size: 25px;
-            opacity: 0.5;
+            opacity: 1;
             cursor: pointer;
-            &:hover {
-                opacity: 1;
-            }
         }
     }
 
@@ -63,11 +47,16 @@
         position: absolute;
         color: white;
         bottom: 10px;
-        font-size: 15px;
-        background-color: rgba(0, 0, 0, 0.4);
+        font-size: 18px;
         padding: 0.2rem 0.4rem;
         border-radius: 0.3rem;
-        opacity: 0;
-        transition: opacity 250ms ease-in-out;
+        opacity: 1;
     }
+    
+}
+
+.fa-angle-right, .fa-angle-left, .fa-angle-right:not(:hover){
+    height: auto;
+    color:#ffff;
+    
 }

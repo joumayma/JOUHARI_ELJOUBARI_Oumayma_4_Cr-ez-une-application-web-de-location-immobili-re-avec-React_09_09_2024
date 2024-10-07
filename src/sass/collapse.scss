@@ -41,16 +41,29 @@
 
     &_animation_down {
         animation: 0.5s linear slideDown;
+
         
     }
     &_animation_up {
         animation: 0.5s linear slideUp;
+ 
+    }
+
+    &_icon_down {
+        transition: transform 0.8s ease; 
+        transform: rotate(0deg);
+
+        
+    }
+    &_icon_up {
+        transition: transform 0.8s ease; 
     }
 
 }
 @keyframes slideDown {
     from {
-        transform: translateY(-66%) scaleY(0)
+        transform: translateY(-66%) scaleY(0) ;
+       
     }
 
     to {
